@@ -1,4 +1,4 @@
-module junjiehuang1020.me/junjiehuang1020/go-training-homework/concurrency
+module junjiehuang1020.me/go-training-homework/concurrency
 
 go 1.18
 

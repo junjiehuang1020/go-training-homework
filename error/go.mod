@@ -1,4 +1,4 @@
-module junjiehuang1020.me/junjiehuang1020/go-training-homework/error
+module junjiehuang1020.me/go-training-homework/error
 
 go 1.18
 
