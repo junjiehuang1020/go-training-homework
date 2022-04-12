@@ -1,25 +1,28 @@
 package main
 
-import "github.com/gin-gonic/gin"
+import (
+	"net/http"
+	"strconv"
 
-func handler(ctx *gin.Context) {
-
-	params := struct {
-		Msg string `json:"msg"`
-	}{}
-
-	ctx.BindQuery(&params)
-
-	ctx.JSON(200, gin.H{
-		"message": params.Msg,
-	})
-
-}
+	"github.com/gin-gonic/gin"
+)
 
 func main() {
 
 	r := gin.Default()
-	r.GET("/ping", handler)
+	r.GET("/user/:uid", func(ctx *gin.Context) {
+
+		uid := ctx.Param("uid")
+		i, err := strconv.ParseInt(uid, 10, 32)
+
+		if err != nil {
+			//
+		}
+
+		user, err := InitializeService().UserInfo(int32(i))
+
+		ctx.JSON(http.StatusOK, user)
+	})
 	r.Run()
 
 }
