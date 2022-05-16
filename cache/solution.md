@@ -184,3 +184,22 @@ junjie@ubuntu:~$ redis-benchmark -t get,set -d 5000 -n 1000000
 ---
 
 # Question2
+
+```zsh
+junjie@ubuntu:~/tmp$ redis-cli
+127.0.0.1:6379> memory usage 10_bytes_0
+(integer) 66
+127.0.0.1:6379> memory usage 20_bytes_0
+(integer) 76
+127.0.0.1:6379> memory usage 50_bytes_0
+(integer) 108
+127.0.0.1:6379> memory usage 100_bytes_0
+(integer) 159
+127.0.0.1:6379> memory usage 200_bytes_0
+(integer) 259
+127.0.0.1:6379> memory usage 1000_bytes_0
+(integer) 1062
+127.0.0.1:6379> memory usage 5000_bytes_0
+(integer) 5062
+127.0.0.1:6379> 
+```
