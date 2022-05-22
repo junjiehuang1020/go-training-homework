@@ -6,7 +6,6 @@
 ![Alt 粘包图片](https://imgs.developpaper.com/imgs/1606616-20200408144442234-1542519195.jpg "粘包图片")
 
 ## 解决方式
----
 ### **fixed length**
 ***
 **解释：**
