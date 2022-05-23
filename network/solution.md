@@ -29,7 +29,7 @@ Netty io.netty.handler.codec.DelimiterBasedFrameDecoder
 ### **length field based**
 
 **解释：**
-在协议头里添加一个字符流长度的字段，这样每次接收到字节流请求，先解析字节流头部的协议，确定整个字节流的长度，根据具体的长度来读取完整的字节流来确定一次完整的消息请求。
+在协议头里添加一个字符流长度的字段，这样每次接收到字节流请求，先解析字节流头部的协议，确定整个字节流的长度，根据具体的长度来读取完整的字节流来确定一次完整的消息请求。<br>
 
 **应用：**
 Netty io.netty.handler.codec.LengthFieldBasedFrameDecoder
